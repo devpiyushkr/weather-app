@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    width:100%;
+    height: 100vh;
+   background-image: url(img/img1.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   position:absolute;
+}
+
+.box{
+    background-color: rgba(5, 5, 5, 0.4);
+  
+    width:70%;
+    max-width:470px;
+ position: absolute;
+ top:50%;
+ left:50%;
+ transform: translate(-50%,-50%);
+    color:white;
+    text-align: center;
+    padding: 10px 20px;
+    padding-top: 40px;
+}
+.search{
+   width:100%;
+
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+.search input{
+
+  font-size: 17px;
+  border-radius: 30px;
+  border: 0px;
+  outline: none;
+  height: 50px;
+  padding: 12px 20px;
+  background-color: rgb(219, 206, 218);
+}
+.search button{
+    background-color: rgb(233, 217, 235);
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 0px;
+}
+.temp{
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.city{
+    font-size: 40px;
+    font-weight: 600;
+}
+.data-col{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 10px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+}
+.col h1{
+    font-size: 20px;
+    font-weight: 500;
+}
+.col-data{
+    margin-left: 15px;
+    
+}
+@media(max-width:530px) {
+    .box{
+        margin: 25px auto;
+    }
+    .temp{
+        font-size: 33px;
+    }
+  .city{
+    font-size: 30px;
+  }
+    .col{
+        display:block;
+    }
+    .search input{
+        max-width:200px;
+        max-height: 50px;
+    }
+    .search button{
+      max-width:50px;
+      max-height: 50px;
+    }
+}
+@media(max-width:440px){
+    .box{
+        margin: 25px auto;
+    }
+    .temp{
+        font-size: 33px;
+    }
+  .city{
+    font-size: 30px;
+  }
+  .data-col{
+    margin-top: 20px;
+  }
+    .col{
+        display:block;
+    }
+    .col-data h1{
+        font-size: 17px;
+    }
+   .humidity{
+    margin-top: 10px;
+   }
+    .search input{
+        max-width:150px;
+        height: 40px;
+       
+    }
+    .search button{
+      max-width:40px;
+      max-height: 40px;
+    } 
+}
+@media(max-width:400px){
+    .box{
+        margin: 0px;
+        width:100%;
+        height: 100vh;
+    }
+    .search input{
+        max-width:200px;
+        height: 40px;
+       
+    }
+    .data-col{
+        margin-top: 50px;
+      }
+      @media(max-width:285px){
+        
+        .search input{
+            max-width:170px;
+            height: 40px;
+           
+        }
+        .data-col{
+            margin-top: 50px;
+          }
+        }
+    }
